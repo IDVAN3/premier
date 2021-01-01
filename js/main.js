@@ -2,14 +2,16 @@
 'use strict'
 $(document).ready(function () {
 
-    /*попап*/
+    /* popup */
 
     function openPopup(id) {
         $(".js-popup[data-id-popup='" + id + "']").fadeIn(300);
+        $('body').addClass('lock1');
     }
 
     function close_popup() {
         $('.js-popup').fadeOut(300);
+        $('body').removeClass('lock1');
     }
 
     $('.js-popup__close').click(close_popup);
@@ -25,6 +27,31 @@ $(document).ready(function () {
         let popup = $('.js-popup__wrapp');
         if (!popup.is(e.target) && popup.has(e.target).length === 0)
             close_popup();
+    });
+
+    // burger
+
+    $('.header__burger').click(function(event) {
+		$('.header__burger,.header__menu').toggleClass('active');
+		$('body').toggleClass('lock');
+    });
+    
+    /*el-select*/
+     $('.js-select-main').click(function () {
+        if ($(window).width() <= 768) {
+            let ths = $(this);
+            let clos = ths.next('.wrapper-submenu');
+            let wr = $('.wrapper-submenu');
+
+            if (!clos.hasClass('active')) {
+                wr.removeClass('active');
+                clos.addClass('active');
+                clos.slideDown(300);
+            } else if (wr.hasClass('active')) {
+                wr.removeClass('active');
+                wr.slideUp(300);
+            } 
+        }
     });
 
     // section calc
