@@ -1099,6 +1099,27 @@ ul.know-text li:before {
   display: none;
 }
 
+.link-show-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  transition: 0.4s;
+  color: #DC6D48;
+  position: relative;
+}
+.link-show-text::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #DC6D48;
+}
+.link-show-text:hover::before {
+  width: 100%;
+}
+
 .footer {
   background: #DBDBDB;
   padding: 38px 0 30px 0;
@@ -1448,6 +1469,10 @@ ul.know-text li:before {
     overflow: hidden;
   }
 
+  .container {
+    padding: 0 10px;
+  }
+
   .header {
     padding: 21px 0;
   }
@@ -1611,6 +1636,10 @@ ul.know-text li:before {
     background-position: 50% 50%;
   }
 
+  .wrapper-show-text {
+    display: none;
+  }
+
   .footer-main {
     flex-wrap: wrap;
   }
@@ -1638,6 +1667,9 @@ ul.know-text li:before {
     order: 1;
     flex-direction: column;
     align-items: center;
+  }
+  .footer-link-color {
+    text-align: start;
   }
 
   .wrapper-scroll {
@@ -1955,7 +1987,7 @@ ul.know-text li:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 20px 40px 20px;
+    padding: 50px 10px 40px 10px;
     box-shadow: none;
     background: #F2F2F2;
     max-width: 100%;

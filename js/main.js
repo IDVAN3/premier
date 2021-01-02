@@ -37,23 +37,26 @@ $(document).ready(function () {
     });
     
     /*el-select*/
-     $('.js-select-main').click(function () {
-        if ($(window).width() <= 768) {
-            let ths = $(this);
-            let clos = ths.next('.wrapper-submenu');
-            let wr = $('.wrapper-submenu');
 
-            if (!clos.hasClass('active')) {
-                wr.removeClass('active');
-                clos.addClass('active');
-                clos.slideDown(300);
-            } else if (wr.hasClass('active')) {
-                wr.removeClass('active');
-                wr.slideUp(300);
-            } 
-        }
-    });
+    $(".js-select-main").click(function(e) {
+        e.preventDefault();
+        let ths = $(this);
+        let clos = ths.closest('.wrapper-submenu');
+        
+            if(!clos.hasClass('active')) {
+                clos.slideToggle(300);
+            }
+            else{
+                clos.slideUp(300);
+            }
+        });
 
+    $('.link-show-text').click(function(e) {
+        e.preventDefault();
+        let allText = $('.wrapper-show-text');
+        allText.slideDown(300);
+        $('.text-mob').slideUp(300);
+    })
     // section calc
 
     $('.capacity__item').click(function (e) {
@@ -171,38 +174,6 @@ $(document).ready(function () {
 });
 /*кнопка прокрутки вверх*/
 
-const offset = 100;
-const scrollUp = document.querySelector('.js-scroll-up');
-// const scrollUpSvgPath = document.querySelector('.js-scroll-up__path');
-// const pathLength = scrollUpSvgPath.getTotalLength();
-
-// scrollUpSvgPath.style.strokeDasharray = '\'' + pathLength + pathLength + '\'';
-// scrollUpSvgPath.style.transition = 'stroke-dashoffset 20ms';
-
-// getTop
-// const getTop = () => window.pageYOffset || document.documentElement.scrollTop;
-
-//updateDashoffset
-
-// const updateDashoffset = () => {
-//     const heigth = document.documentElement.scrollHeight - window.innerHeight;
-//     const dashoffset = pathLength - (getTop() * pathLength / heigth);
-
-//     scrollUpSvgPath.style.strokeDashoffset = dashoffset;
-// }
-
-// onScroll
-// window.addEventListener('scroll', () => {
-//     updateDashoffset();
-//     getTop() > offset ? scrollUp.classList.add('scroll-up_active') : scrollUp.classList.remove('scroll-up_active');
-// });
-
-// click
-scrollUp.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-    });
+$('.js-scroll-up').click(function() {
+    $('body,html').animate({scrollTop:0},500);
 });
-
-/*скрол по якорю*/
