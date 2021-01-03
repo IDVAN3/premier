@@ -41,13 +41,13 @@ $(document).ready(function () {
     $(".js-select-main").click(function(e) {
         e.preventDefault();
         let ths = $(this);
-        let clos = ths.closest('.wrapper-submenu');
-        
-            if(!clos.hasClass('active')) {
-                clos.slideToggle(300);
+        let clos = ths.next('.wrapper-submenu');
+            if(clos.is(":visible")) {
+                clos.removeClass('active');
             }
-            else{
-                clos.slideUp(300);
+            else {
+                $('.wrapper-submenu').removeClass('active');
+                clos.addClass('active');
             }
         });
 
@@ -119,6 +119,7 @@ $(document).ready(function () {
     let field2 = document.getElementById('num2');
     let percent = 100;
     let maxValue = 100;
+    const numInputs = document.querySelectorAll('input[type=number]');
 
     function getRange(slider){
         let x = slider.value;
@@ -127,7 +128,21 @@ $(document).ready(function () {
         slider.style.background = color;
       }
 
+      function getNull (range, field, id) {
+        numInputs[id].addEventListener('change', function (e) {
+            if (e.target.value == '') {
+                e.target.value = 0;
+                range.value = 0;
+                field.value = 0;
+            }
+        })
+    }
+
+    getNull(range, field, 0);
+    getNull(range2, field2, 1);
+
     function getSliderRange(valueId, numId) {
+
         valueId.addEventListener('input', function (e) {
             numId.value = e.target.value;
         });
@@ -145,22 +160,25 @@ $(document).ready(function () {
         })   
 
         let id = numId.id;
-
-        $("input#"+id).change(function(){
+        
+        $("input#"+id).change(function(){    
             if (+$(this).attr('max') < $(this).val()) {
                 $(this).val($(this).attr('max'));
                 getRange(valueId);
             }
-            if (+$(this).attr('min') > $(this).val()) {
+            if (+$(this).attr('min') >= $(this).val()) {
                 $(this).val($(this).attr('min'));
                 getRange(valueId);
             }
+
             getRange(valueId);
         });
     }
 
     getSliderRange(range, field);
     getSliderRange(range2, field2);
+
+ 
 
             
 

@@ -333,6 +333,14 @@ li.counter li:before {
   border-bottom: 13px solid #fff;
   z-index: 5;
 }
+.submenu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -31px;
+  width: 100%;
+  height: 13px;
+}
 
 .topmenu > li:hover .wrapper-submenu {
   display: block;
@@ -1299,7 +1307,7 @@ ul.know-text li:before {
   border: 1px solid #DBDBDB;
   font-weight: 500;
   font-size: 16px;
-  color: #DBDBDB;
+  color: #1D0C03;
   padding: 17px 0 14px 24px;
 }
 .popup-input::placeholder {
@@ -1575,7 +1583,7 @@ ul.know-text li:before {
   .header__menu.active .wrapper-submenu {
     background: transparent;
     position: static;
-    display: none;
+    display: none !important;
     transform: none;
     width: auto;
     padding: 0;
@@ -1583,7 +1591,10 @@ ul.know-text li:before {
     filter: none;
   }
   .header__menu.active .wrapper-submenu.active {
-    display: flex;
+    display: flex !important;
+  }
+  .header__menu.active .submenu {
+    flex-direction: column;
   }
   .header__menu.active .submenu::after {
     border: none;
@@ -1927,6 +1938,9 @@ ul.know-text li:before {
     font-size: 24px;
     line-height: 24px;
     padding-right: 3px;
+  }
+  .calc-line__item:last-child {
+    max-width: 12px;
   }
 
   .capacity {

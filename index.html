@@ -137,7 +137,7 @@
                 </div>
                 <div class="header__wrapper-text">
                     <a href="tel:+7 (123) 456-78-90" class="header__link type-link2 text-right">+7 (123) 456-78-90</a>
-                    <a href="#" class="header__link text-right">Обратный звонок</a>
+                    <a href="popup-2" class="header__link text-right js-btn-popup">Обратный звонок</a>
                 </div>
             </div>
         </div>
@@ -146,7 +146,7 @@
         <section class="section-background-premier">
             <div class="container">
                 <div class="background-premier">
-                    <h3 class="premier-subtitle">в Москве и МО</h3>
+                    <p class="premier-subtitle">в Москве и МО</p>
                     <h1 class="premier-title">Аренда манипуляторов</h1>
                     <h2 class="premier-title2 premier-title2-bottom premier-title2-mob">недорого</h2>
                     <div class="premier-popup premier-popup-bottom popup-pc">
@@ -592,7 +592,7 @@
                                         <div class="input-value"><span>100</span> км</div>
                                     </div>
                                 </div>
-                                <input type="number" class="input-number input-number-top quantity-num" id="num1" value="50" min="1" max="100">
+                                <input type="number" class="input-number input-number-top quantity-num" id="num1" value="50" min="0" max="100" required>
                             </div>
                             
                         </div>
@@ -611,7 +611,7 @@
                                         <div class="input-value"><span>100</span> км</div>
                                     </div>
                                 </div>
-                                <input type="number" class="input-number input-number-top quantity-num" id="num2" value="50" min="1" max="100">
+                                <input type="number" class="input-number input-number-top quantity-num" id="num2" value="50" min="0" max="100" required>
                             </div>
                             
                         </div>
@@ -811,6 +811,31 @@
     </div>
 
     <div class="popup js-popup" data-id-popup="popup-2">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup-container">
+                <h2 class="popup-title popup-title-bottom">Обратный звонок</h2>
+                <form action="">
+                    <input type="text" class="popup-input popup-input-bottom" placeholder="Введите своё имя">
+                    <input type="text" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" class="popup-input js-popup-phone popup-input-bottom2" placeholder="+7___-___-__-__">
+                    <div class="premier-popup popup-premier-bottom">
+                        <button class="popup-btn">
+                            <a href="popup-1" class="premier-popup__link js-btn-popup">Заказать обратный звонок</a>
+                        </button>
+                    </div>
+                </form>
+                <div class="popup-wrapper-lock">
+                    <div class="popup-lock">
+                        <img src="img/svg/lock.svg" alt="">
+                    </div>
+                    <p class="popup-text">Мы не передаём ваши данные 3-м лицам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup js-popup" data-id-popup="popup-3">
         <div class="popup__opas"></div>
         <div class="popup__wrapp js-popup__wrapp">
             <span class="popup__close js-popup__close"></span>
