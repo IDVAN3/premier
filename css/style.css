@@ -823,6 +823,9 @@ li.counter li:before {
 .calc-wrapper__item.active {
   display: block;
 }
+.calc-line__item:last-child {
+  max-width: 12px;
+}
 .calc-title {
   color: #361504;
   font-size: 32px;
@@ -1938,9 +1941,6 @@ ul.know-text li:before {
     font-size: 24px;
     line-height: 24px;
     padding-right: 3px;
-  }
-  .calc-line__item:last-child {
-    max-width: 12px;
   }
 
   .capacity {
