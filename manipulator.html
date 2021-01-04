@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<!-- Оболочка документа -->
+<html lang="ru">
+
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+    <title>Парк спецтехники</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="img/icons/favicon.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!-- ОБОЛОЧКА -->
+    <div class="wrapper">
+<header class="header">
+    <div class="container">
+        <div class="header-main header__body">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/svg/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <div class="header__menu">
+                <ul class="header__list topmenu">
+                    <li class="header__li not-pc">
+                        <div class="header__logo not-pc">
+                            <a href="#">
+                                <img src="img/svg/logo2.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="header__li ">
+                        <a href="#" class="header__link header__sub-list js-select-main">Манипуляторы
+                            <span>
+                                <svg class="icons-arrow">
+                                    <use xlink:href="img/svg/sprite.svg#arrow-bottom"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="wrapper-submenu">
+                            <ul class="submenu">
+                                <li><a href="#" class="header__link">3 тонны</a></li>
+                                <li><a href="#" class="header__link">15 тонн</a></li>
+                                <li><a href="#" class="header__link">С люлькой</a></li>
+                                <li><a href="#" class="header__link">5 тонн</a></li>
+                                <li><a href="#" class="header__link">25 тонн</a></li>
+                                <li><a href="#" class="header__link">Кран</a></li>
+                                <li><a href="#" class="header__link">7 тонн</a></li>
+                                <li><a href="#" class="header__link">Длинномер</a></li>
+                                <li><a href="#" class="header__link">Камаз</a></li>
+                                <li><a href="#" class="header__link">10 тонн</a></li>
+                                <li><a href="#" class="header__link">Вездеход</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__link header__sub-list js-select-main">Виды перевозок
+                            <span>
+                                <svg class="icons-arrow">
+                                    <use xlink:href="img/svg/sprite.svg#arrow-bottom"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <div class="wrapper-submenu">
+                            <ul class="submenu">
+                                <li><a href="#" class="header__link">3 тонны</a></li>
+                                <li><a href="#" class="header__link">15 тонн</a></li>
+                                <li><a href="#" class="header__link">С люлькой</a></li>
+                                <li><a href="#" class="header__link">5 тонн</a></li>
+                                <li><a href="#" class="header__link">25 тонн</a></li>
+                                <li><a href="#" class="header__link">Кран</a></li>
+                                <li><a href="#" class="header__link">7 тонн</a></li>
+                                <li><a href="#" class="header__link">Длинномер</a></li>
+                                <li><a href="#" class="header__link">Камаз</a></li>
+                                <li><a href="#" class="header__link">10 тонн</a></li>
+                                <li><a href="#" class="header__link">Вездеход</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__link">Цены</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__right not-pc">
+                    <div class="header__wrapper-text">
+                        <a href="tel:+7 (123) 456-78-90" class="header__link type-link2">+7 (123) 456-78-90</a>
+                        <a href="mailto:ooo_premier@inbox.ru" class="header__link type-link2">ooo_premier@inbox.ru</a>
+                    </div>
+                    <div class="header__social icons">
+                        <div class="icons__item">
+                            <a href="#">
+                                <img src="img/svg/telegram2.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="icons__item">
+                            <a href="#">
+                                <img src="img/svg/whatsapp2.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="premier-popup">
+                        <a href="popup-0" class="premier-popup__link popup-white js-btn-popup">Заказать манипулятор</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__right header-pc">
+                <div class="header__social icons">
+                    <div class="icons__item">
+                        <a href="#">
+                            <img src="img/svg/telega.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="icons__item">
+                        <a href="#">
+                            <img src="img/svg/whatsapp.svg" alt="">
+                        </a>
+                        <!-- <a href="#">
+                            <svg class="icon-all">
+                                <use xlink:href="img/svg/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="header__wrapper-text pr42">
+                    <h4 class="header__subtitle">Москва и МО</h4>
+                    <p class="header__text">работаем 24/7</p>
+                </div>
+                <div class="header__wrapper-text">
+                    <a href="tel:+7 (123) 456-78-90" class="header__link type-link2 text-right">+7 (123) 456-78-90</a>
+                    <a href="popup-2" class="header__link text-right js-btn-popup">Обратный звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <section class="section-top">
+            <div class="container">
+                <div class="top">
+                    <div class="top__item">
+                        <h1 class="premier-title top-title">Услуги манипуляторов в Москве и МО</h1>
+                    </div>
+                    <div class="top__item">
+                        <div class="top-wrapper-text">
+                            <p class="top-text">Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
+                                или строители домов. Наши машины работают в любой точке Ленинградской области (Павловск, Петергоф, Тихвин, Пушкин, Приморск, Сестрорецк, Всеволожск,
+                                Ломоносов и т.д).</p>
+                            <p class="top-text"> В нашем автопарке есть маленький манипулятор который сможет проехать 
+                                под любые арки и перевозить груз до 3 тонн, он низкорамный всего 90 см от земли 
+                                до борта. Он по своим параметрам не больше газели, а по мощности превосходит его.
+                                Заказать манипулятор дешево можно по телефону 8(123)123-12-12,  так же по телефону рассчитывается стоимость, индивидуально.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="park">
+                    <h2 class="premier-title2 park-title">Парк спецтехники</h2>
+                    <div class="park-rectangle">
+                        <div class="park-rectangle__item">
+                            <h3 class="park-subtitle">Выбрать по типу:</h3>
+                            <ul class="park-list">
+                                <li class="park__li"><a href="#" class="park__link">Вездеход</a></li>
+                                <li class="park__li"><a href="#" class="park__link active">Длинномер</a></li>
+                                <li class="park__li"><a href="#" class="park__link">Камаз</a></li>
+                                <li class="park__li"><a href="#" class="park__link">Кран</a></li>
+                                <li class="park__li"><a href="#" class="park__link">Манипулятор с люлькой</a></li>
+                            </ul>
+                        </div>
+                        <div class="park-rectangle__item">
+                            <h3 class="park-subtitle">Выбрать по грузоподъемности:</h3>
+                            <ul class="park-list">
+                                <li class="park__li"><a href="#" class="park__link">3 т</a></li>
+                                <li class="park__li"><a href="#" class="park__link">5 т</a></li>
+                                <li class="park__li"><a href="#" class="park__link">7 т</a></li>
+                                <li class="park__li"><a href="#" class="park__link active">10 т</a></li>
+                                <li class="park__li"><a href="#" class="park__link">15 т</a></li>
+                                <li class="park__li"><a href="#" class="park__link">25 т</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="park-wrapper park-wrapper-top">
+                        <div class="park-wrapper__item">
+                            <div class="park-wrapper__img">
+                                <img src="img/transport/1type2.webp" alt="">
+                            </div>
+                            <div class="park-wrapper__content">
+                                <h4 class="park-wrapper-title park-wrapper-title-bottom">Манипулятор 10 тонн</h4>
+                                <div class="park-wrapper__characteristic">
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text">Марка, модель</p>
+                                        <p class="characteristic-text">Грузоподъемность кузова</p>
+                                        <p class="characteristic-text">Грузоподъемность стрелы</p>
+                                        <p class="characteristic-text">Длина платформы</p>
+                                        <p class="characteristic-text">Длина стрелы</p>
+                                    </div>
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text text-right">модель</p>
+                                        <p class="characteristic-text text-right">10 т.</p>
+                                        <p class="characteristic-text text-right">4,5 м.</p>
+                                        <p class="characteristic-text text-right">8,5 м.</p>
+                                        <p class="characteristic-text text-right">7,5 м.</p>
+                                    </div>
+                                </div>
+                                <div class="park-wrapper__price">
+                                    <div class="price">
+                                        <div class="price-old">2100 руб./час</div>
+                                        <div class="price-new">1450 руб./час</div>
+                                    </div>
+                                    <div class="premier-popup choice-popup price-link">
+                                        <a href="#" class="premier-popup__link js-btn-popup">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="park-wrapper__item">
+                            <div class="park-wrapper__img">
+                                <img src="img/transport/1type2.webp" alt="">
+                            </div>
+                            <div class="park-wrapper__content">
+                                <h4 class="park-wrapper-title park-wrapper-title-bottom">Манипулятор 10 тонн</h4>
+                                <div class="park-wrapper__characteristic">
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text">Марка, модель</p>
+                                        <p class="characteristic-text">Грузоподъемность кузова</p>
+                                        <p class="characteristic-text">Грузоподъемность стрелы</p>
+                                        <p class="characteristic-text">Длина платформы</p>
+                                        <p class="characteristic-text">Длина стрелы</p>
+                                    </div>
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text text-right">модель</p>
+                                        <p class="characteristic-text text-right">10 т.</p>
+                                        <p class="characteristic-text text-right">4,5 м.</p>
+                                        <p class="characteristic-text text-right">8,5 м.</p>
+                                        <p class="characteristic-text text-right">7,5 м.</p>
+                                    </div>
+                                </div>
+                                <div class="park-wrapper__price">
+                                    <div class="price">
+                                        <div class="price-old">2100 руб./час</div>
+                                        <div class="price-new">1450 руб./час</div>
+                                    </div>
+                                    <div class="premier-popup choice-popup price-link">
+                                        <a href="#" class="premier-popup__link js-btn-popup">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="park-wrapper__item">
+                            <div class="park-wrapper__img">
+                                <img src="img/transport/1type2.webp" alt="">
+                            </div>
+                            <div class="park-wrapper__content">
+                                <h4 class="park-wrapper-title park-wrapper-title-bottom">Манипулятор 10 тонн</h4>
+                                <div class="park-wrapper__characteristic">
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text">Марка, модель</p>
+                                        <p class="characteristic-text">Грузоподъемность кузова</p>
+                                        <p class="characteristic-text">Грузоподъемность стрелы</p>
+                                        <p class="characteristic-text">Длина платформы</p>
+                                        <p class="characteristic-text">Длина стрелы</p>
+                                    </div>
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text text-right">модель</p>
+                                        <p class="characteristic-text text-right">10 т.</p>
+                                        <p class="characteristic-text text-right">4,5 м.</p>
+                                        <p class="characteristic-text text-right">8,5 м.</p>
+                                        <p class="characteristic-text text-right">7,5 м.</p>
+                                    </div>
+                                </div>
+                                <div class="park-wrapper__price">
+                                    <div class="price">
+                                        <div class="price-old">2100 руб./час</div>
+                                        <div class="price-new">1450 руб./час</div>
+                                    </div>
+                                    <div class="premier-popup choice-popup price-link">
+                                        <a href="#" class="premier-popup__link js-btn-popup">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="park-wrapper__item">
+                            <div class="park-wrapper__img">
+                                <img src="img/transport/1type2.webp" alt="">
+                            </div>
+                            <div class="park-wrapper__content">
+                                <h4 class="park-wrapper-title park-wrapper-title-bottom">Манипулятор 10 тонн</h4>
+                                <div class="park-wrapper__characteristic">
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text">Марка, модель</p>
+                                        <p class="characteristic-text">Грузоподъемность кузова</p>
+                                        <p class="characteristic-text">Грузоподъемность стрелы</p>
+                                        <p class="characteristic-text">Длина платформы</p>
+                                        <p class="characteristic-text">Длина стрелы</p>
+                                    </div>
+                                    <div class="characteristic__item">
+                                        <p class="characteristic-text text-right">модель</p>
+                                        <p class="characteristic-text text-right">10 т.</p>
+                                        <p class="characteristic-text text-right">4,5 м.</p>
+                                        <p class="characteristic-text text-right">8,5 м.</p>
+                                        <p class="characteristic-text text-right">7,5 м.</p>
+                                    </div>
+                                </div>
+                                <div class="park-wrapper__price">
+                                    <div class="price">
+                                        <div class="price-old">2100 руб./час</div>
+                                        <div class="price-new">1450 руб./час</div>
+                                    </div>
+                                    <div class="premier-popup choice-popup price-link">
+                                        <a href="#" class="premier-popup__link js-btn-popup">Заказать</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="df-jcc">
+                        <div class="premier-popup all-park-wrapper">
+                            <a href="#" class="premier-popup__link all-park js-btn-popup">Весь парк техники</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-benefit">
+            <div class="container">
+                <div class="benefit">
+                    <h2 class="main-title benefit-bottom">Выгодные условия аренды манипуляторов</h2>
+                    <h4 class="benefit-subtitle benefit-subtitle-bottom">при условии раннего бронирования 
+                        манипулятора скидка 10%</h4>
+                    <div class="benefit-wrapper">
+                        <div class="benefit-wrapper__item">
+                            <div class="benefit-wrapper-main">
+                                <p class="benefit-text"><span>Большой современный автопарк</span> со спецтехникой разного назначения и технических параметров</p>
+                            </div>
+                        </div>
+                        <div class="benefit-wrapper__item">
+                            <div class="benefit-wrapper-sub">
+                                <div class="benefit-wrapper__subitem">
+                                    <p class="benefit-text"><span>Доступные цены</span> на аренду манипуляторотов <span>от 990 руб./ч.</span>
+                                    </p>
+                                </div>
+                                <div class="benefit-wrapper__subitem">
+                                    <p class="benefit-text">Опытные, ответственные <span>водители-операторы</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit-wrapper__item">
+                            <div class="benefit-wrapper-sub">
+                                <div class="benefit-wrapper__subitem">
+                                    <p class="benefit-text">
+                                    <span>Скидки</span> для постоянных заказчиков и <span>специальные цены</span> для партнеров</p>
+                                </div>
+                                    
+                                <div class="benefit-wrapper__subitem">
+                                    <p class="benefit-text"><span>Разные способы 
+                                    оплаты:</span> безналичный 
+                                    и наличный расчет</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit-wrapper__item">
+                            <div class="benefit-wrapper-main">
+                                <p class="benefit-text"><span>Круглосуточный режим работы</span> для выполнения заказов 
+                                    в удобное для клиентов время</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-help">
+            <div class="container">
+                <div class="help">
+                    <h2 class="main-title help-title">Как заказать манипулятор</h2>
+                    <h3 class="main-subtitle help-subtitle">Чтобы выбрать лучший для ваших задач манипулятор, нужна следующая информация:</h3>
+                    <div class="help-wrapper">
+                        <div class="help-wrapper__item">
+                            <div class="help-wrapper__circle">1</div>
+                            <p class="help-text help-text-top">Дальность и сложность маршрута по Москве и МО</p>
+                        </div>
+                        <div class="help-wrapper__item">
+                            <div class="help-wrapper__circle">2</div>
+                            <p class="help-text help-text2 help-text-top">Вид, тоннаж и габарит груза</p>
+                        </div>
+                        <div class="help-wrapper__item">
+                            <div class="help-wrapper__circle">3</div>
+                            <p class="help-text help-text2 help-text-top">Время и сроки выполнения работ</p>
+                        </div>
+                    </div>
+                    <div class="help-form">
+                        <h3 class="main-subtitle help-form-title">Нужна помощь специалиста в выборе спецтехники?</h3>
+                        <h4 class="help-form-subtitle">Заполните форму, и мы вам поможем</h4>
+                        <form action="" class="help-form-wrapper">
+                            <input type="text" class="popup-input" placeholder="Введите своё имя">
+                            <input type="text" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" class="popup-input js-popup-phone" placeholder="+7___-___-__-__">
+                            <button class="premier-popup__link btn-help-form">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-know">
+            <div class="container">
+                <div class="know">
+                    <h2 class="main-title know-bottom">Что нужно знать при 
+                        заказе манипулятора</h2>
+                    <div class="know-wrapper">
+                        <div class="know-wrapper__item">
+                            <h4 class="know-title">Подзаголовок</h4>
+                            <p class="know-text">Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
+                                или строители домов. Наши машины работают в любой точке Ленинградской области (Павловск, Петергоф, Тихвин, Пушкин, Приморск, Сестрорецк, Всеволожск, Ломоносов и т.д). <span class="text-mob mob"><a href="#" class="link-show-text">показать больше</a></span> </p>
+                            <div class="wrapper-show-text">
+                                <p class="know-text">В нашем автопарке есть маленький манипулятор который сможет проехать 
+                                    под любые арки и перевозить груз до 3 тонн, он низкорамный всего 90 см от земли 
+                                    до борта. Он по своим параметрам не больше газели, а по мощности превосходит его. <br>
+                                    Заказать манипулятор дешево можно по телефону 8(921)944-30-88,  так же по телефону рассчитывается стоимость, индивидуально в зависимости от места загрузки и выгрузки. У нас самые дешевые цены на аренду спецтехники грузоподъемностью бортом 3 тонны и 5 тонн.</p>
+                                <p class="know-text">Для многих строительных компаний содержать погрузо-разгрузочную технику - дополнительная статья расходов, снижающая рентабельность  компании. Поэтому так актуальна на сегодняшний день аренда спецтехники, услуга востребованная 
+                                    и популярная.</p>
+                            </div>
+                        </div>
+                        <div class="know-wrapper__item wrapper-show-text">
+                            <p class="know-text">2. К такой необходимой технике можно отнести автокраны, погрузчики и другие приспособления для выгрузки стройматериалов. Но самым правильным решением будет заказать бортовой кран манипулятор,  как прогрессивное техническое решение. Благодаря гидроманипулятору можно значительно поднять интенсивность применения специальной техники для транспортировки различных грузов, и свести к минимуму использования ручного труда на погрузо-разгрузочных работах. При этом значительно сокращается количество задействованной техники 
+                                и рабочих. Труднодоступные места создают массу проблем при строительстве. Грузоперевозки манипулятором от собственника обеспечивает вам гарантию выполнения работ.
+                            • Пункт • Пункт</p>
+                            <ol class="know-text">
+                                <li>Первый пункт</li>
+                                <li>Второй пункт</li>
+                            </ol>
+                            <ul class="know-text">
+                                <li>Первый пункт</li>
+                                <li>Второй пункт</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-main__item">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/svg/logo.svg" alt="">
+                    </a>
+                </div>
+                <p class="footer-text footer-text-bottom">Аренда манипуляторов 
+                    в Москве и МО</p>
+                
+            </div>
+            <div class="footer-main__item footer-center">
+                 <ul class="footer-list">
+                     <li class="footer__li">
+                         <a href="#" class="footer__link">Манипуляторы</a>
+                     </li>
+                     <li class="footer__li">
+                        <a href="#" class="footer__link">Цены</a>
+                    </li>
+                     <li class="footer__li">
+                         <a href="#" class="footer__link">Виды перевозок</a>
+                     </li>
+                     <li class="footer__li">
+                         <a href="#" class="footer__link">Контакты</a>
+                     </li>
+                 </ul>
+            </div>
+            <div class="footer-main__item footer-center">
+                <div class="wrapper-footer-content">
+                    <a href="tel:+7 (123) 456-78-90" class="footer__link footer-link-type">+7 (123) 456-78-90</a>
+                    <a href="mailto:ooo_premier@inbox.ru" class="footer__link footer-link-type">ooo_premier@inbox.ru</a>
+                    <div class="wrapper-scroll scroll-pc">
+                        <div class="scroll-up js-scroll-up">Наверх ↑</div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer-main">
+            <div class="footer-main__item ai-end footer-first">
+                <div class="wrapper-scroll scroll-mob">
+                    <div class="scroll-up js-scroll-up">Наверх ↑</div>
+                </div>
+                <p class="footer-text-color">© 2021 «Премьер»</p>
+            </div>
+            <div class="footer-main__item ai-end mob50">
+                <div class="wrapper-link-color">
+                    <a href="#" class="footer-link-color">Соглашение на обработку персональных данных</a>
+                 </div>
+            </div>
+            <div class="footer-main__item mob50">
+                <div class="header__social icons footer-end">
+                    <div class="icons__item">
+                        <a href="#">
+                            <img src="img/svg/telega.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="icons__item">
+                        <a href="#">
+                            <img src="img/svg/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>    </div>
+
+ <!-- попап -->
+    <div class="popup js-popup" data-id-popup="popup-0">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup-container">
+                <h2 class="popup-title popup-title-bottom">Для аренды манипулятора заполните поля ниже</h2>
+                <form action="">
+                    <input type="text" class="popup-input popup-input-bottom" placeholder="Введите своё имя">
+                    <input type="text" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" class="popup-input js-popup-phone popup-input-bottom2" placeholder="+7___-___-__-__">
+                    <div class="premier-popup popup-premier-bottom">
+                        <button class="popup-btn">
+                            <a href="popup-1" class="premier-popup__link js-btn-popup">Заказать манипулятор</a>
+                        </button>
+                    </div>
+                </form>
+                <div class="popup-wrapper-lock">
+                    <div class="popup-lock">
+                        <img src="img/svg/lock.svg" alt="">
+                    </div>
+                    <p class="popup-text">Мы не передаём ваши данные 3-м лицам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup js-popup" data-id-popup="popup-1">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp popup__wrapp-type-2 js-popup__wrapp">
+            <span class="popup__close  popup__close2 js-popup__close"></span>
+            <div class="popup-container">
+                <h2 class="popup-title2 popup-title2-pad">Спасибо за Вашу заявку!</h2>
+                <p class="popup-text2 popup-text2-pad">Наши менеджеры скоро свяжутся с Вами</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup js-popup" data-id-popup="popup-2">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup-container">
+                <h2 class="popup-title popup-title-bottom">Обратный звонок</h2>
+                <form action="">
+                    <input type="text" class="popup-input popup-input-bottom" placeholder="Введите своё имя">
+                    <input type="text" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" class="popup-input js-popup-phone popup-input-bottom2" placeholder="+7___-___-__-__">
+                    <div class="premier-popup popup-premier-bottom">
+                        <button class="popup-btn">
+                            <a href="popup-1" class="premier-popup__link js-btn-popup">Заказать обратный звонок</a>
+                        </button>
+                    </div>
+                </form>
+                <div class="popup-wrapper-lock">
+                    <div class="popup-lock">
+                        <img src="img/svg/lock.svg" alt="">
+                    </div>
+                    <p class="popup-text">Мы не передаём ваши данные 3-м лицам</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup js-popup" data-id-popup="popup-3">
+        <div class="popup__opas"></div>
+        <div class="popup__wrapp js-popup__wrapp">
+            <span class="popup__close js-popup__close"></span>
+            <div class="popup-container">
+                <h2>Попап</h2>
+            </div>
+        </div>
+    </div>
+ <!-- кнопка прокрутки вверх -->
+    <!-- <div class="scroll-up js-scroll-up">
+        <svg class="scroll-up__svg" viewBox="-2 -2 52 52">
+            <path class="scroll-up__path js-scroll-up__path" d="M24,0 a24,24 0 0,1 0,48 a24,24 0 0,1 0,-48"/>
+        </svg>
+    </div> -->
+    
+    <!-- Подключеине скриптов -->
+    <script src="libs/jquery/jquery.min.js"></script>
+    <script src="libs/jquery.maskedinput.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

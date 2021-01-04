@@ -53,9 +53,10 @@ $(document).ready(function () {
 
     $('.link-show-text').click(function(e) {
         e.preventDefault();
-        let allText = $('.wrapper-show-text');
+        let allText = ((($(this).parent()).parent()).parent()).parent().find($('.wrapper-show-text'));
+        console.log(allText)
         allText.slideDown(300);
-        $('.text-mob').slideUp(300);
+        $(this).slideUp(300);
     })
     // section calc
 
@@ -137,9 +138,11 @@ $(document).ready(function () {
             }
         })
     }
-
-    getNull(range, field, 0);
-    getNull(range2, field2, 1);
+    if (range && range2) {
+        getNull(range, field, 0);
+        getNull(range2, field2, 1);
+    }
+    
 
     function getSliderRange(valueId, numId) {
 
@@ -175,10 +178,20 @@ $(document).ready(function () {
         });
     }
 
-    getSliderRange(range, field);
-    getSliderRange(range2, field2);
+    if (range && range2) {
+        getSliderRange(range, field);
+        getSliderRange(range2, field2);
+    }
+    
 
- 
+    // toggle class active for park links
+
+    $('.park__link').click(function(e){
+        e.preventDefault();
+        e = $(this).closest('.park-list').find('.park__link.active');
+        e.removeClass('active');
+        $(this).addClass('active');
+    })
 
             
 
