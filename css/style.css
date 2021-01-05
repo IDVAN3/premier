@@ -293,10 +293,6 @@ li.counter li:before {
   position: relative;
 }
 
-.topmenu {
-  height: 100%;
-}
-
 .topmenu > li {
   display: flex;
   align-items: center;
@@ -1047,15 +1043,24 @@ li.counter li:before {
   color: #361504;
   padding-bottom: 20px;
 }
-
-ol.know-text {
+.know h4 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #361504;
+  padding-bottom: 7px;
+}
+.know p, .know ol, .know ul {
+  line-height: 22px;
+  color: #361504;
+  padding-bottom: 20px;
+}
+.know ol {
   margin-left: 20px;
 }
-
-ul.know-text {
+.know ul {
   list-style-type: none;
 }
-ul.know-text li:before {
+.know ul li:before {
   content: "•";
   margin-right: 5px;
 }
@@ -1151,6 +1156,15 @@ ul.know-text li:before {
   background: #F2F2F2;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14);
   padding: 30px 20px;
+}
+.top p, .top ol, .top ul {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #361504;
+}
+.top p:not(:last-child), .top ol:not(:last-child), .top ul:not(:last-child) {
+  padding-bottom: 20px;
 }
 .top-text {
   font-weight: 500;
@@ -2564,13 +2578,13 @@ ul.know-text li:before {
   .know-bottom {
     padding-bottom: 20px;
   }
-  .know-title {
+  .know h4 {
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 4px;
   }
-  .know-text {
+  .know p, .know ul, .know ol {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
