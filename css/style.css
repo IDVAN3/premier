@@ -293,6 +293,10 @@ li.counter li:before {
   position: relative;
 }
 
+.topmenu {
+  height: 100%;
+}
+
 .topmenu > li {
   display: flex;
   align-items: center;
@@ -2896,6 +2900,10 @@ li.counter li:before {
 
   .pb0 {
     padding-bottom: 0;
+  }
+
+  .topmenu {
+    height: auto;
   }
 }
 @media (max-width: 640px) {
