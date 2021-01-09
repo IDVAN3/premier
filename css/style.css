@@ -2254,16 +2254,20 @@ a.park-wrapper-title:hover {
     filter: none;
   }
   .header__menu.active .wrapper-submenu.active {
-    display: flex !important;
+    display: block !important;
   }
   .header__menu.active .submenu {
-    flex-direction: column;
+    flex-direction: column !important;
+  }
+  .header__menu.active .submenu::before {
+    width: 0;
+    height: 0;
   }
   .header__menu.active .submenu::after {
     border: none;
   }
   .header__menu.active .submenu li {
-    flex: 0 0 100%;
+    flex: 1 1 auto;
     margin: 0 0px 5px 0px;
   }
   .header__menu.active .type-link2 {
