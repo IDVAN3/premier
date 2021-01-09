@@ -2218,7 +2218,7 @@ a.park-wrapper-title:hover {
     align-items: flex-start;
     justify-content: space-between;
     overflow-y: auto;
-    transition: 0s;
+    max-height: 100vh;
   }
   .header__menu.active .header__logo.not-pc {
     max-width: 180px;
