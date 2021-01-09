@@ -38,30 +38,47 @@ $(document).ready(function () {
     
     /*el-select*/
 
-    $(".js-select-main").click(function(e) {
-        e.preventDefault();
-        let ths = $(this);
-        let clos = ths.next('.wrapper-submenu');
-            if(clos.is(":visible")) {
-                clos.removeClass('active');
-            }
-            else {
-                $('.wrapper-submenu').removeClass('active');
-                clos.addClass('active');
-            }
-        });
+    // update 2 start
+
+            if ($(window).width() < 768) {
+                $(".js-select-main").click(function(e) {
+                       e.preventDefault(); 
+                
+                    let ths = $(this).parent();
+                    let clos = ths.next('.wrapper-submenu');
+                    let currentArrow = ths.find($(".icons-arrow"));
+                        if(clos.is(":visible")) {
+                            clos.removeClass('active');
+                            currentArrow.removeClass('active');
+                        }
+                        else {
+                            $('.wrapper-submenu').removeClass('active');
+                            $(".icons-arrow").removeClass('active');
+                            clos.addClass('active');
+                            currentArrow.addClass('active');
+                        }
+                });
+            } 
+
+
+            
+
+    // update 2 end
 
     $('.link-show-text').click(function(e) {
         e.preventDefault();
         let allText = ((($(this).parent()).parent()).parent()).parent().find($('.wrapper-show-text'));
-        console.log(allText)
+
         allText.slideDown(300);
         $(this).slideUp(300);
     })
     // section calc
 
+
     $('.capacity__item').click(function (e) {
         e.preventDefault();
+        e = $(this).closest('.capacity').find('.capacity__item.active');
+        e.removeClass('active');
         $(this).toggleClass('active');
     });
 
@@ -198,9 +215,9 @@ $(document).ready(function () {
 
     // telephone mask
 
-    $(function(){
-        $(".js-popup-phone").mask("+7999-999-99-99");
-      });
+    // $(function(){
+    //     $(".js-popup-phone").mask("+7999-999-99-99");
+    //   });
 
 });
 /*кнопка прокрутки вверх*/

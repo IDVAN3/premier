@@ -37,8 +37,8 @@
                         </div>
                     </li>
                     <li class="header__li ">
-                        <a href="#" class="header__link header__sub-list js-select-main">Манипуляторы
-                            <span>
+                        <a href="#" class="header__link header__sub-list">Манипуляторы
+                            <span class="js-select-main">
                                 <svg class="icons-arrow">
                                     <use xlink:href="img/svg/sprite.svg#arrow-bottom"></use>
                                 </svg>
@@ -61,8 +61,8 @@
                         </div>
                     </li>
                     <li class="header__li">
-                        <a href="#" class="header__link header__sub-list js-select-main">Виды перевозок
-                            <span>
+                        <a href="#" class="header__link header__sub-list">Виды перевозок
+                            <span class="js-select-main">
                                 <svg class="icons-arrow">
                                     <use xlink:href="img/svg/sprite.svg#arrow-bottom"></use>
                                 </svg>
@@ -151,10 +151,10 @@
                     </div>
                     <div class="top__item">
                         <div class="top-wrapper-text">
-                            <p class="top-text">Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
+                            <p>Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
                                 или строители домов. Наши машины работают в любой точке Ленинградской области (Павловск, Петергоф, Тихвин, Пушкин, Приморск, Сестрорецк, Всеволожск,
                                 Ломоносов и т.д).</p>
-                            <p class="top-text"> В нашем автопарке есть маленький манипулятор который сможет проехать 
+                            <p> В нашем автопарке есть маленький манипулятор который сможет проехать 
                                 под любые арки и перевозить груз</p>
                         </div>
                     </div>
@@ -191,16 +191,16 @@
                         заказе манипулятора</h2>
                     <div class="know-wrapper">
                         <div class="know-wrapper__item order-2-mob">
-                            <p class="know-text">Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
+                            <p>Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
                                 или строители домов. Наши машины работают в любой точке Ленинградской области (Павловск, Петергоф, Тихвин, Пушкин, Приморск, Сестрорецк, Всеволожск, Ломоносов и т.д). <span class="text-mob mob"><a href="#" class="link-show-text">показать больше</a></span> </p>
                             <div class="wrapper-show-text">
-                                <p class="know-text">В нашем автопарке есть маленький манипулятор который сможет проехать 
+                                <p>В нашем автопарке есть маленький манипулятор который сможет проехать 
                                     под любые арки и перевозить груз до 3 тонн, он низкорамный всего 90 см от земли 
                                     до борта. Он по своим параметрам не больше газели, а по мощности превосходит его. <br>
                                     Заказать манипулятор дешево можно по телефону 8(921)944-30-88,  так же по телефону рассчитывается стоимость, индивидуально</p>
-                                    <p class="know-text">Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
+                                    <p>Аренду манипуляторов в Ленинградской области часто заказывают садоводы 
                                         или строители домов. Наши машины работают в любой точке Ленинградской области (Павловск, Петергоф, Тихвин, Пушкин, Приморск, Сестрорецк, Всеволожск, Ломоносов и т.д).</p>
-                                        <p class="know-text">В нашем автопарке есть маленький манипулятор который сможет проехать 
+                                        <p>В нашем автопарке есть маленький манипулятор который сможет проехать 
                                             под любые арки и перевозить груз до 3 тонн, он низкорамный всего 90 см от земли 
                                             до борта. Он по своим параметрам не больше газели, а по мощности превосходит его. <br>
                                             Заказать манипулятор дешево можно по телефону 8(921)944-30-88,  так же по телефону рассчитывается стоимость, индивидуально</p>
@@ -213,20 +213,22 @@
                 </div>
             </div>
         </section>
-
+        <!-- update-2 -->
         <section class="section-help">
             <div class="container">
-                <div class="help-form">
-                    <h3 class="main-subtitle help-form-title">Нужна помощь специалиста в выборе спецтехники?</h3>
-                    <h4 class="help-form-subtitle">Заполните форму, и мы вам поможем</h4>
-                    <form action="" class="help-form-wrapper">
+                <div class="help-form help-form-con">
+                    <h3 class="main-subtitle help-form-title">Связаться с нами</h3>
+                    <h4 class="help-form-subtitle">Для того, чтобы связаться с нами - заполните поля ниже</h4>
+                    <form action="" class="help-form-wrapper help-form-contact">
                         <input type="text" class="popup-input" placeholder="Введите своё имя">
                         <input type="text" onkeyup="this.value = this.value.replace(/[^\d+]/g,'');" class="popup-input js-popup-phone" placeholder="+7___-___-__-__">
+                        <input type="text" class="popup-input" placeholder="Ваше сообщение">
                         <button class="premier-popup__link btn-help-form">Отправить</button>
                     </form>
                 </div>
             </div>
         </section>
+        <!-- update-2 end -->
 
         
 
@@ -379,7 +381,7 @@
     
     <!-- Подключеине скриптов -->
     <script src="libs/jquery/jquery.min.js"></script>
-    <script src="libs/jquery.maskedinput.min.js"></script>
+    <!-- <script src="libs/jquery.maskedinput.min.js"></script> -->
     <script src="js/main.js"></script>
 </body>
 
